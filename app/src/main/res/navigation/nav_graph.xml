@@ -11,10 +11,18 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_clientFragment"
-            app:destination="@id/clientFragment2" />
+            app:destination="@id/clientFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_serverFragment"
+            app:destination="@id/serverFragment" />
     </fragment>
     <fragment
-        android:id="@+id/clientFragment2"
+        android:id="@+id/clientFragment"
         android:name="com.haxtech.networkvideostream.ui.client.ClientFragment"
         android:label="ClientFragment" />
+    <fragment
+        android:id="@+id/serverFragment"
+        android:name="com.haxtech.networkvideostream.ui.server.ServerFragment"
+        android:label="fragment_server"
+        tools:layout="@layout/fragment_server" />
 </navigation>
